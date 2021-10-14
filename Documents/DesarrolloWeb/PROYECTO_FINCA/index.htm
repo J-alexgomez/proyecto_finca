@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA=compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto fincas</title>
+</head>
+<body>
+    <h1>Alquiler Fincas</h1>
+    <button onclick="traerInformacion()">consultar</button>
+    <div id="resultado">
+
+    </div>
+    <form>
+        <label>ID</label>
+        <input type="number" name="id" id="id" placeholder="id"><br>
+        <label>ADDRESS</label>
+        <input type="text" name="address" id="address" placeholder="address"><br>
+        <label>CATEGORY_ID</label>
+        <input type="number" name="category_id" id="category_id" placeholder="category_id"><br>
+        <label>NAME</label>
+        <input type="text" name="name" id="name" placeholder="name"><br>
+        <label>EXENSION</label>
+        <input type="NUMBER" name="exension" id="exension" placeholder="exension"><br>
+        <button onclick=guardarInformacion()>guardar</button>
+        
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Lista de fincas</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <table id="productTable" class="table table-bordered table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ADDRESS</th>
+                            <th>CATEGORY_ID</th>
+                            <th>NAME</th>
+                            <th>EXENSION</th>
+                            <th>ELIMINAR</th>
+                            <th>EDITAR</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "datos">                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+        </form>
+        </form>
+    </form>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</body>
+</html>
